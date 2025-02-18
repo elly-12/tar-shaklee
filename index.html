@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaklee - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+   <!-- Header Section -->
+   <h3>
+    <div class="top-bar">
+        <span>EN | BM</span> 
+        <span>Customer Support: +603-56223188</span>
+        <span id="welcome-text" style="display: none;">Welcome, <span id="user-name"></span></span>
+    </div>
+    </h3>
+    <div class="nav-bar">
+        <span class="logo.png">Shaklee</span>
+        <nav>
+            <h2>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">About</a>
+            <a href="product.html">Product</a>
+            </h2>
+        </nav>
+        </div>
+
+            <!-- Search Bar (Left of User Icon) -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <!-- Cart Icon -->
+            <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <img id="heroImage" src="banner.jpg" alt="Shaklee Trusted Brand Award">
+        <img id="heroImage" src="AgelessWand.jpg" alt="Ageless Wand Shaklee">
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Explore Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product.html?name=esp">
+                    <img src="esp.png" alt="ESP">
+                </a>
+                <p>ESP Mixed Soy Protein Powder with Vanilla Flavour</p>
+                <p class="distributor-price">RM139</p>
+                <p class="retail-price">RM173.75</p>
+                <p class="UV">37</p>
+                <p class="GUV">127</p>
+                <button class="add-to-cart" onclick="addToCart('ESP', 139)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=vitac">
+                    <img src="vitac.png" alt="Sustained Release Vita C">
+                </a>
+                <p>Sustained Release Vita C</p>
+                <p class="distributor-price">RM92</p>
+                <p class="retail-price">RM115</p>
+                <p class="UV">22</p>
+                <p class="GUV">80</p>
+                <button class="add-to-cart" onclick="addToCart('Sustained Release Vita C', 92)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=collagen">
+                    <img src="collagen.png" alt="Collagen Plus Powder">
+                </a>
+                <p>Collagen Plus Powder</p>
+                <p class="distributor-price">RM238</p>
+                <p class="retail-price">RM298</p>
+                <p class="UV">69</p>
+                <p class="GUV">226</p>
+                <button class="add-to-cart" onclick="addToCart('Collagen Plus Powder', 239)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=vivix">
+                    <img src="vivix.png" alt="Vivix">
+                </a>
+                <p>Vivix®</p>
+                <p class="distributor-price">RM399</p>
+                <p class="retail-price">RM498.75</p>
+                <p class="UV">112</p>
+                <p class="GUV">380</p>
+                <button class="add-to-cart" onclick="addToCart('Vivix', 399)">Add To Cart</button>
+            </div><br>
+
+            <div class="product">
+                <a href="product.html?name=cinch-mix">
+                    <img src="cinch-mix.png" alt="Life Cinch (Cafe Latte & Chocolate)">
+                </a>
+                <p>Life Cinch® - Combo Pack (Cafe Latte & Chocolate) @5% Off</p>
+                <p class="distributor-price">RM288</p>
+                <p class="retail-price">RM361</p>
+                <p class="UV">66</p>
+                <p class="GUV">267</p>
+                <button class="add-to-cart" onclick="addToCart('Sustained Release Vita C', 92)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=pain">
+                    <img src="pain.png" alt="Sustained Release Vita C">
+                </a>
+                <p>Pain Relief Caplet</p>
+                <p class="distributor-price">RM108</p>
+                <p class="retail-price">RM135</p>
+                <p class="UV">26</p>
+                <p class="GUV">93</p>
+                <button class="add-to-cart" onclick="addToCart('Sustained Release Vita C', 92)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=oste">
+                    <img src="oste.png" alt="Sustained Release Vita C">
+                </a>
+                <p>OsteNutrix</p>
+                <p class="distributor-price">RM55</p>
+                <p class="retail-price">RM68.75</p>
+                <p class="UV">15</p>
+                <p class="GUV">51</p>
+                <button class="add-to-cart" onclick="addToCart('Sustained Release Vita C', 92)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=alfalfa">
+                    <img src="alfalfa.png" alt="Sustained Release Vita C">
+                </a>
+                <p>Alfalfa Complex (330 Tablets)</p>
+                <p class="distributor-price">RM61</p>
+                <p class="retail-price">RM76.25</p>
+                <p class="UV">14</p>
+                <p class="GUV">52</p>
+                <button class="add-to-cart" onclick="addToCart('Sustained Release Vita C', 92)">Add To Cart</button>
+            </div>
+
+        </div>
+        <button class="view-all">View All Products</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h3>🚚 Free & Fast Delivery</h3>
+            <p>Free delivery for all orders over RM300</p>
+        </div>
+        <div class="feature">
+            <h3>🕘 24/7 Customer Service</h3>
+            <p>Friendly 24/7 customer support</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h4>Shaklee</h3>
+                <p>Subscribe for updates</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+            <div class="column">
+                <h3>Support</h3>
+                <p>111 Bijoy Sarani, Dhaka</p>
+                <p>Email: exclusive@gmail.com</p>
+                <p>Phone: +88015-88888-9999</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© Copyright 2025. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

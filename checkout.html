@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaklee Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h3>
+        <div class="top-bar">
+            <span>EN | BM</span> 
+            <span>Customer Support: +603-56223188</span>
+        </div>
+        </h3>
+        <div class="nav-bar">
+            <span class="logo">Shaklee</span>
+            <nav>
+                <h4>
+                <a href="index.html">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a href="product.html">Product</a>
+                </h4>
+            </nav>
+        </div>
+
+    <!-- Shopping Cart Section -->
+    <section class="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <div class="cart-container">
+            <h3>Review Order</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Products</th>
+                        <th>Price (RM)</th>
+                        <th>Quantity</th>
+                        <th>Total (RM)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-item" data-price="454.75">
+                        <td>
+                            <img src="images/resv.png" alt="RES V" class="product-img">
+                            <span>RES V<br>Product Code: <b>11029</b></span>
+                        </td>
+                        <td>RM454.75</td>
+                        <td>
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" class="quantity" value="1" min="1">
+                            <button class="qty-btn plus">+</button>
+                        </td>
+                        <td class="subtotal">RM454.75</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Shipping Information -->
+        <div class="shipping-info">
+            <h3>Shipping Information</h3>
+            <label>Recipient Name:</label>
+            <input type="text"><br>
+            <label>Mobile:</label>
+            <input type="text" placeholder="Ex: 6012-3456789"><br>
+            <label>Email:</label>
+            <input type="email" placeholder="email@shaklee.com"><br>
+            <label>Shipping Address:</label>
+            <div class="address-group">
+                <input type="text" placeholder="Address 1"><br>
+                <input type="text" placeholder="Address 2"><br>
+                <input type="text" placeholder="Address 3"><br>
+            </div>
+            <div class="select-group">
+                <select id="state">
+                    <option value="">Select State</option>
+                </select>
+                
+                <select id="city">
+                    <option value="">Select City</option>
+                </select>
+                
+                <select id="postcode">
+                    <option value="">Select Postcode</option>
+                </select>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox"> I confirm that I accept the Terms and Conditions.
+                <input type="checkbox"> I consent to the processing of my personal data.
+                <input type="checkbox"> I agree to receive product updates.
+            </div>
+
+            <button class="save-btn">Save</button>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3>Enter SMART Code</h3>
+            <input type="text" placeholder="Enter Code">
+            <button class="apply-btn">APPLY</button>
+
+            <h3>Order Summary</h3>
+            <p>Subtotal: <span id="subtotal">RM454.75</span></p>
+            <p>Freight Charges: RM0.00</p>
+            <p>Adjustment: RM0.00</p>
+            <p>Total to Pay: <span id="total">RM454.75</span></p>
+
+            <button class="pay-btn">PAY NOW</button>
+        </div>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

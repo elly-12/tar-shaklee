@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaklee - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+   <!-- Header Section -->
+   <h3>
+    <div class="top-bar">
+        <span>EN | BM</span> 
+        <span>Customer Support: +603-56223188</span>
+        <span id="welcome-text" style="display: none;">Welcome, <span id="user-name"></span></span>
+    </div>
+    </h3>
+    <div class="nav-bar">
+        <span class="logo.png">Shaklee</span>
+        <nav>
+            <h2>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">About</a>
+            <a href="product.html">Product</a>
+            </h2>
+        </nav>
+        </div>
+
+            <!-- Search Bar (Left of User Icon) -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <!-- Cart Icon -->
+            <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <img id="heroImage" src="banner.jpg" alt="Shaklee Trusted Brand Award">
+        <img id="heroImage" src="AgelessWand.jpg" alt="Ageless Wand Shaklee">
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Explore Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product.html?name=esp">
+                    <img src="esp.png" alt="ESP">
+                </a>
+                <p>ESP Mixed Soy Protein Powder with Vanilla Flavour</p>
+                <p class="distributor-price">RM139</p>
+                <p class="retail-price">RM173.75</p>
+                <p class="UV">37</p>
+                <p class="GUV">127</p>
+                <button class="add-to-cart" onclick="addToCart('ESP', 139)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=vitac">
+                    <img src="vitac.png" alt="Sustained Release Vita C">
+                </a>
+                <p>Sustained Release Vita C</p>
+                <p class="distributor-price">RM92</p>
+                <p class="retail-price">RM115</p>
+                <p class="UV">22</p>
+                <p class="GUV">80</p>
+                <button class="add-to-cart" onclick="addToCart('Sustained Release Vita C', 92)">Add To Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="product.html?name=collagen">
+       

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h3>
+        <div class="top-bar">
+            <span>EN | BM</span> 
+            <span>Customer Support: +603-56223188</span>
+        </div>
+        </h3>
+        <div class="nav-bar">
+            <span class="logo">Shaklee</span>
+            <nav>
+                <h2>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">About</a>
+                <a href="product.html">Product</a>
+                </h2>
+            </nav>
+        </h3>
+
+    <div class="cart-container">
+        <h2>Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="cart-actions">
+            <a href="index.html"><button class="btn-secondary">Return To Main Page</button></a>
+            <input type="text" placeholder="Coupon Code">
+        </div>
+
+        <div class="voucher-section">
+            <input type="text" placeholder="Voucher Code">
+            <button>Apply Voucher</button>
+        </div>
+
+        <div class="cart-total">
+            <p>Subtotal: <span id="subtotal">RM0</span></p>
+            <p>Shipping: Free</p>
+            <p>Total: <span id="total">RM0</span></p>
+            <a href="checkout.html"></a><button id="checkout-btn">Proceed to Checkout</button></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Shaklee</h3>
+            <p>Get 10% off your first order</p>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <p>111 Bijoy sarani, Dhaka, Bangladesh.</p>
+            <p>shaklee@gmail.com</p>
+            <p>+88015-88888-99999</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
