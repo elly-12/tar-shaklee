@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Exclusive</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+     <!-- Header Section -->
+     <h3>
+        <div class="top-bar">
+            <span>EN | BM</span> 
+            <span>Customer Support: +603-56223188</span>
+        </div>
+        </h3>
+        <div class="nav-bar">
+            <span class="logo">Shaklee</span>
+            <nav>
+                <h4>
+                <a href="index.html">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a href="product.html">Product</a>
+                </h4> 
+            </nav>
+            <input type="text" placeholder="What are you looking for?" class="search-bar">
+            <span class="icons">🛒 ❤ 🔍 </span>
+            
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="#">Account</a> / <a href="#">Gaming</a> / <span>Havic HV G-92 Gamepad</span>
+    </div>
+
+    <!-- Product Section -->
+    <section class="product-container">
+        <div class="product-images">
+            <img src="esp.png" alt="Main Image" class="main-image">
+        </div>
+
+        <div class="product-details">
+            <h1>Energizing Soy Protein</h1>
+            <p class="distributor-price">RM139.00</p>
+            <p class="retail-price">RM173.75</p>
+            <p class="stock">Available</p>
+            <p class="description">Suitable for man and women.</p>
+
+            <div class="quantity-section">
+                <button class="qty-btn" onclick="decreaseQty()">-</button>
+                <input type="text" value="1" id="quantity">
+                <button class="qty-btn" onclick="increaseQty()">+</button>
+            </div>
+            <br>
+            <button class="buy-now">Buy Now</button>
+            <button class="add-to-cart">Add to Cart</button>
+
+            <div class="delivery-info">
+                <p>🚚 Free Delivery for order above RM300</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <h2>Related Items</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="vitac.png" alt="Vita-C">
+                <p>Sustained Release Vita-C Plus</p>
+                <p>Distributor Price: RM92</p>
+                <p>Retail Price: RM115</p>
+            </div>
+            <div class="product-card">
+                <img src="omega.jpg" alt="Omega Guard">
+                <p>Omega Guard</p>
+                <p>Distributor Price: RM114</p>
+                <p>Retail Price: RM142.50</p>
+            </div>
+            <div class="product-card">
+                <img src="vivix.png" alt="Vivix">
+                <p>Vivix</p>
+                <p>Distributor Price: RM499</p>
+                <p>Retail Price: RM589</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h4>Shaklee</h4>
+                <p>Get 10% off your first order</p>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="column">
+                <h4>Support</h4>
+                <p>Contact us: +603-56223188</p>
+            </div>
+            <div class="column">
+                <h4>Quick Links</h4>
+                <p>Privacy Policy | Terms | Help</p>
+            </div>
+        </div>
+        <p class="copyright">© Copyright 2025. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

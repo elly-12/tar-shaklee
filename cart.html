@@ -10,24 +10,22 @@
 <body>
 
     <!-- Header Section -->
-    <h3>
-        <div class="top-bar">
-            <span>EN | BM</span> 
-            <span>Customer Support: +603-56223188</span>
-        </div>
-        </h3>
-        <div class="nav-bar">
-            <span class="logo">Shaklee</span>
-            <nav>
-                <h2>
-                <a href="index.html">Home</a>
-                <a href="contact.html">Contact</a>
-                <a href="#">About</a>
-                <a href="product.html">Product</a>
-                </h2>
-            </nav>
-        </h3>
+    <div class="top-bar">
+        <span>EN | BM</span> 
+        <span>Customer Support: +603-56223188</span>
+    </div>
 
+    <div class="nav-bar">
+        <span class="logo">Shaklee</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">About</a>
+            <a href="product.html">Product</a>
+        </nav>
+    </div>
+
+    <!-- Shopping Cart Section -->
     <div class="cart-container">
         <h2>Cart</h2>
         <table>
@@ -59,10 +57,13 @@
             <p>Subtotal: <span id="subtotal">RM0</span></p>
             <p>Shipping: Free</p>
             <p>Total: <span id="total">RM0</span></p>
-            <a href="checkout.html"></a><button id="checkout-btn">Proceed to Checkout</button></div>
+            <a href="checkout.html">
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </a>
         </div>
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <div class="footer-section">
             <h3>Shaklee</h3>
@@ -72,7 +73,7 @@
 
         <div class="footer-section">
             <h3>Support</h3>
-            <p>111 Bijoy sarani, Dhaka, Bangladesh.</p>
+            <p>111 Bijoy Sarani, Dhaka, Bangladesh.</p>
             <p>shaklee@gmail.com</p>
             <p>+88015-88888-99999</p>
         </div>
@@ -80,10 +81,10 @@
         <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
-                <li>Privacy Policy</li>
-                <li>Terms of Use</li>
-                <li>FAQ</li>
-                <li>Contact</li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </footer>
