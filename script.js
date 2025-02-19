@@ -305,6 +305,22 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(changeImage, 50000);
 });
 
+    let cart = [];
+
+    function addToCart(productName, price) {
+        // Add product to the cart array
+        cart.push({ name: productName, price: price });
+
+        // Update Cart Notification
+        alert(productName + " has been added to your cart!");
+
+        // Update Cart Counter (if available)
+        let cartCounter = document.getElementById("cart-counter");
+        if (cartCounter) {
+            cartCounter.textContent = cart.length;
+        }
+    }
+
 // Function to Add to Cart
 function addToCart(productName, price) {
     let cartCount = document.getElementById("cart-count");
