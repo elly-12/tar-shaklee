@@ -92,7 +92,7 @@ document.getElementById("profile-form").addEventListener("submit", function(even
 });
 
 /* script for checkout */
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const cartItem = document.querySelector(".cart-item");
     const quantityInput = cartItem.querySelector(".quantity");
     const minusBtn = cartItem.querySelector(".minus");
